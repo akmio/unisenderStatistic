@@ -1,0 +1,51 @@
+{
+    "name": "yolva/crm",
+    "authors": [
+        {
+            "name": "yolva",
+            "email": "request@yolva-it.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Yolva\\": "../www/local/php_interface/classes/"
+        }
+    },
+    "require": {
+        "php": ">=8.0.0",
+        "chillerlan/php-qrcode": "^4.3",
+        "guzzlehttp/guzzle": "^6.3",
+        "laravel/lumen-framework": "^8.0",
+        "monolog/monolog": "^2.0",
+        "php-http/client-common": "^2.1",
+        "php-http/curl-client": "^2.1",
+        "php-http/discovery": "^1.7",
+        "php-http/guzzle6-adapter": "^2.0",
+        "php-http/httplug": "^2.1",
+        "php-http/message": "^1.8",
+        "php-http/message-factory": "^1.0",
+        "phpro/soap-client": "^1.0",
+        "vlucas/phpdotenv": "^5.2",
+        "unisender/api-wrapper":"*",
+        "kint-php/kint": "*"
+    },
+    "scripts": {
+        "post-root-package-install": [
+            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+        ]
+    },
+    "config": {
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "optimize-autoloader": true,
+        "platform": {
+            "php": "8.0.0"
+        },
+        "allow-plugins": {
+            "php-http/discovery": false
+        },
+        "platform-check": false
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

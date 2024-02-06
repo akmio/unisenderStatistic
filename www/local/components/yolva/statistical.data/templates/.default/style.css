@@ -1,0 +1,30 @@
+div[data-tab-id="tab_statistical_data"]{
+    background-color: #ffffff;
+}
+div.content{
+    margin: 10px;
+}
+
+span.green{
+    color: #008000;
+}
+span.red{
+    color: #ff0000;
+}
+
+.content table{
+    border: 1px solid rgb(238, 242, 244);
+    border-collapse:collapse;
+    width: 100%;
+}
+
+.content th{
+    border: 1px solid rgb(238, 242, 244);
+}
+
+.content td{
+    border: 1px solid rgb(238, 242, 244);
+}
+.content td.green{
+    color: #008000;
+}
